@@ -1,16 +1,14 @@
-//
-// Created by Alex  on 4/13/24.
-//
+#pragma once
+#include <string>
 
-#ifndef SAND_PILE_MODEL_ARG_STRUCT_H
-#define SAND_PILE_MODEL_ARG_STRUCT_H
+struct ARGS{
+public:
+    std::string csv_name_;
+    std::string path_name_;
+    int iteration_;
+    int freq_;
 
+    ARGS();
 
-
-class arg_struct {
-
+    void addARGS(const std::string& csv_name, const std::string& path_name, int iteration, int freq);
 };
-
-
-
-#endif //SAND_PILE_MODEL_ARG_STRUCT_H
