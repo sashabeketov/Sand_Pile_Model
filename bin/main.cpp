@@ -7,11 +7,8 @@ const uint8_t CSV_FILE_ERR = 1;
 
 int main(int argc, char* argv[]){
     ARGS args = ParsArgs(argc, argv);
-    args.path_name_ = "/Users/alex/Desktop/bmp/";
-    args.csv_name_ = "/Users/alex/Desktop/Книга1.csv";
-    args.freq_ = 10;
-    args.iteration_ = 10000;
 
+    args.path_name_ += "/";
 
     std::ifstream csv_file(args.csv_name_);
 
